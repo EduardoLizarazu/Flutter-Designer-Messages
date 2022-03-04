@@ -87,3 +87,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/img/person-1.jfif
+    - assets/img/person-2.jfif
+    - assets/img/person-3.jfif
+    - assets/img/person-4.jfif
+    - assets/img/person-5.png

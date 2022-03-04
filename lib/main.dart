@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'user_review.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +11,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    String pathImage = "assets/img/person-1.jfif";
+    String name = "Edward Wizard";
+    String xp = "Experience: 10 years";
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        body: Column(
+          children: <Widget>[UserReview(pathImage, name, xp)],
+        ),
+      ),
     );
   }
 }
