@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'review/user_review_list.dart';
+import 'header_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +18,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: Column(
-          children: <Widget>[UserReviewList()],
-        ),
-      ),
+          body: Stack(
+        children: <Widget>[
+          ListView(
+            children: <Widget>[
+              Column(
+                children: <Widget>[UserReviewList()],
+              ),
+            ],
+          ),
+          HeaderAppBar()
+        ],
+      )),
     );
   }
 }
