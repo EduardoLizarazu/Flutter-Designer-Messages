@@ -8,7 +8,7 @@ class UserReviewList extends StatelessWidget {
 
     return Column(
       children: <Widget>[
-        const SizedBox(height: 100.0),
+        const SizedBox(height: 50.0),
         UserReview("assets/img/person-1.jfif", "Edward Wizard",
             "Experience: 10 years"),
         const Divider(
